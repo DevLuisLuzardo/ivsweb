@@ -1,212 +1,655 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-  <title>IVS Webapp</title>
-  <!-- Favicon-->
-  <link rel="icon" type="image/x-icon" href="./favicon.ico" />
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-  <!-- Bootstrap Icons-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-  <!-- Google fonts-->
-  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
-    rel="stylesheet" type="text/css" />
-  <!-- SimpleLightbox plugin CSS-->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
-  <!-- Core theme CSS (includes Bootstrap)-->
-  <link href="css/styles.css" rel="stylesheet" />
-  <!-- Font Awesome -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
-  <!-- MDB -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css" rel="stylesheet" />
-  <!-- w3schools  -->
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-  <!-- w3schools  -->
-  <link href="../css/stylesidebar.css" rel="stylesheet" />
+   
+   <meta charset="UTF-8">
+   <title>Ivs web</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+   <meta name="description" content="" />
+   <link href="../css/stylesidebar.css" rel="stylesheet" />  
+   <meta name="author" content="" />
+   <!-- Favicon-->
+   <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+   <!-- Core theme CSS (includes Bootstrap)-->
+   <link href="../css/styles.css" rel="stylesheet" />
+   <!-- Core theme CSS (my styles) -->
+   <link href="../css/colap_sidebar.css" rel="stylesheet" />
+   <link href="../css/maincontent.css" rel="stylesheet" />
+
 </head>
 
 <body id="page-top">
+
+<!-- inicio. ma in page -->   
+<div id="mainpage">
+   
   <!-- Navigation  -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-3 " id="idnavbar">
-    <a class="navbar-brand" hrestyle="padding-right: 5px">
-      <button id = "idnavbar" style="margin-left: 7px; background-color:cornflowerblue; border-radius: 10px;" class=" openbtn"
-        id="openBtn" onclick="toggleNav()">☰
-      </button>
-      <img src="./logo.png" alt="Logo de tu sitio" style="padding-left: 3px" />
-      <b>Regional Atlántico</b>
+  <nav 
+    class = "navbar navbar-expand-lg navbar-light bg-light fixed-top py-3"
+  >
+     
+    <!-- Colap sidebar menuhambur  -->
+    <a
+      class="links"
+      href="#"
+    >
+      
+      <img id = "idimglogo"
+        src = "../logo.png" 
+        alt = "Logo de tu sitio" 
+        class = "paddleft_10 spancolor_blue"      
+      />     
+       
+       <span 
+         class="visible spancolor_blue spansize_20 "
+       >
+         Regional Atlántico
+       </span>
+       
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a onclick="" class="nav-link">
-          </a>
-        </li>
+    
+    
+    <div 
+      class="navbar-nav ms-auto"
+    >
+      <ul 
+        class="navbar-nav"
+      >
+          <!-- Iniciar 
+          <img id="login" src="" alt=
+            style="padding-left: 20px; padding-right: 20px; cursor: pointer" />
+          <!-- Cerrar Sesion -- 
+          <img id="loginout" src="" alt=""
+            style="padding-left: 20px; padding-right: 20px; cursor: pointer" />
+          sesion Google -->
       </ul>
-      <div class="navbar-nav ms-auto">
-        <ul class="navbar-nav">
-          <!-- Iniciar sesion Google -->
-          <img id="login" src="" alt="" style="padding-left: 20px; padding-right: 20px; cursor: pointer" />
-          <!-- Cerrar Sesion -->
-          <img id="loginout" src="" alt="" style="padding-left: 20px; padding-right: 20px; cursor: pointer" />
-        </ul>
-      </div>
     </div>
+    
   </nav>
 
-  <div id="mySidebar" class="sidebar">
-    <div style="overflow-y: auto; height: 1200px;">
-    <a href="#">Mision</a>
-    <a href="#">Vision</a>
-    <a href="#">Aspectos Legales</a>
-    <a href="#">Objetivos</a>
-    <a href="#">Devocionales</a>
-    <a href="#">Intercesión</a>
-    <a href="#">Eventos</a>
-    <a href="#">Sedes Asociadas</a>
-    </div>
-  </div>
+<div 
+  style="padding-top:9px; border-radius: 20px; margin-top:90px; " 
+  id="mySidebar" 
+  class="sidebar"
+>
+            
+     <button id="idbtnside" 
+       class="openbtn rounded_15 mgleft_10"
+     >
+       ☰ 
+     </button>
+   
+    
+   <a href="#encab" class="sidebar-link"
+   >
+        <img id = "idinicio"
+        src = "../img/home1.png" 
+        alt = "Inicio" 
+        class = "paddleft_10 w_42"
+    />
+      <span 
+        id="opside1" 
+        class="visible"     
+      >
+        <!-- Texto Opcion -->
+        Inicio
 
-  <!-- Masthead-->
-  <div id="encab" style="margin-top: 100px" class="imagen-container">
-    <img src="./img/mastehead3.png" alt="Descripción de la imagen" />
-  </div>
-  <!-- DEVOCIONALES IVS -->
-  <div class="container mt-5">
+      </span>
+
+    </a> 
+ 
+    <a href="#mision" class="sidebar-link"
+    >
+        <img id = "idmision"
+        src = "../img/mision1.png" 
+        alt = "mision" 
+        class = "paddleft_10 w_42"
+        style="width:30px"
+      />
+      <span style="margin-right:10px" id="opside2" class="visible">Misión</span>
+    </a>   
+     
+    <a href="#vision" class="sidebar-link"
+    >
+        <img id = "idvision"
+        src = "../img/vision1.png" 
+        alt = "vision" 
+        class = "paddleft_10 w_42"
+        style="width:30px"
+      />
+      <span style="margin-right:10px" id="opside3" class="visible">Visión</span>
+    </a>
+
+    <a href="#aslegales" class="sidebar-link"
+    >
+        <img id = "idaspectoslegal"
+        src = "../img/legalidad1.png" 
+        alt = "legales" 
+        class = "paddleft_10 w_42"
+        style="width:30px"
+      />
+      <span style="margin-right:10px" id="opside4" class="visible">Aspectos Legales</span>
+    </a>
+
+    <a href="#devocionales" class="sidebar-link">
+        <img id = "iddevocional"
+        src = "../img/devocional1.png" 
+        alt = "devocional" 
+        class = "paddleft_10 w_42"
+        style="width:30px"
+      />
+      <span style="margin-right:10px" id="opside5" class="visible">Devocionales</span>
+    </a>
+
+    <a href="#intercesion" class="sidebar-link">
+        <img id = "idintercesion"
+        src = "../img/intercesion2.png" 
+        alt = "intercesión" 
+        class = "paddleft_10 w_42"
+        style="width:30px"
+      />
+      <span style="margin-right:10px" id="opside6" class="visible">Intercesión</span>
+    </a>
+
+    <a href="#eventos" class="sidebar-link">
+        <img id = "ideventos"
+        src = "../img/eventos1.png"
+        alt = "eventos" 
+        class = "paddleft_10 w_42"
+        style="width:30px"
+      />
+      <span style="margin-right:10px" id="opside7" class="visible">Eventos</span>
+    </a>
+
+    <a href="#sedesasocia" class="sidebar-link">
+        <img id = "idsedesasocia"
+        src = "../img/sedesasocia1.png" 
+        alt = "sedes" 
+        class = "paddleft_10 w_42"
+        style="width:30px"
+      />
+      <span style="margin-right:10px" id="opside8" class="visible">Sedes Asociadas</span>
+    </a>
+
+    <a href="#piepagina" class="sidebar-link">
+        <img id = "idfooter"
+        src = "../img/irapie.png" 
+        alt = "footer" 
+        class = "paddleft_10 w_42"
+        style="width:30px"
+      />
+      <span style="margin-right:10px" id="opside9" class="visible">Pie de pagina</span>
+    </a>
+            
+</div>
+
+
+  <!-- Contenedor Principal -->
+  <div class="main-content"
+     
+    <!-- Masthead-->
+    <div id="encab" class="imagen-container">
+      <img style="margin-top:0px; border-radius: 20px;" src="../img/mastehead3.png" alt="Imagen Encab" />
+    </div>         
+    
+  </div
+  
+  <!-- 🏠 INICIO --> 
+  <section class="paddtop_50 paddleft_75"  id="inicio">
+   <H1>Diseña el Sitio Web de Tu Iglesia</H1>
+     <!-- Contenido de la sección inicio -->
+     <p>
+       Propuesta detallada para cada sección de tu sitio web, diseñada 
+       para brindar información  clara y relevante a tu congregación y 
+       visitantes:
+     </p>
+     
+    <div class="col-sm-11 paddbottom_20">
+        <div>
+          <img style="width: 100%; cursor: pointer; border-radius: 20px;" 
+            onclick="" src="../img/inidiseweb.png"
+            alt="" 
+            class="d-block w-100" />
+        </div>       
+     </div>
+          
+  </section>
+  
+<div>
+<!-- 🚀 MISION -->
+      
+  <section class=" paddtop_50 paddleft_75 paddbottom_15"  id="mision">   
+    <H1 class="paddbottom_20" >Misión</H1>
+    
+    <div class="col-sm-11 paddbottom_20">
+        <div>
+          <img style="width: 100%; cursor: pointer; border-radius: 20px;" 
+            onclick="" src="../img/imgvision.png"
+            alt="" 
+            class="d-block w-100" />
+        </div>       
+     </div>
+     
+    <p>
+      Las historias de nuestros países hispanohablantes han atravesado 
+      duros momentos, como el que vivimos ahora mismo. Esta realidad 
+      histórica, sumada a problemáticas de actualidad como el ambientalismo 
+      y los derechos sociales, por nombrar algunos, han movido a la iglesia 
+      latina a reflexionar acerca de su rol. 
+    </p>
+    <p>
+      Las propuestas han sido variadas. Conceptos como “justicia social”,
+      “misión integral” o la “edificación del reino” se ubican hoy entre 
+      los debates cristianos. Se trata de una genuina compasión y ánimo 
+      por realizar algún aporte constructivo. En el fondo, el debate 
+      apunta al rol de la Iglesia. ¿Qué debemos hacer los cristianos? 
+      ¿Cuál es nuestra misión?
+    </p>
+
+    <h4>Definición clara</h4>
+    <p>
+      Expresa de manera concisa y poderosa el propósito fundamental 
+      de tu iglesia. ¿Qué impacto desean generar en la comunidad y en 
+      las vidas de las personas?
+    </p>
+    <h6>Ejemplo:</h6>
+    <p>
+      "Nuestra misión es compartir el amor de Cristo, edificar a los 
+      creyentes y alcanzar a aquellos que aún no le conocen, transformando 
+      vidas y comunidades."
+    </p>
+    <h4>Valores</h4>
+    <p>
+      Enumera los valores fundamentales que guían las acciones 
+      y decisione de la iglesia.
+    </p>
+    <h6>Ejemplo:</h6>
+    <p>
+      Fe, amor, esperanza, servicio, integridad.
+    </p>
+    <h4>Enfoque</h4>
+    <p>
+      Describe brevemente los principales ministerios y programas que 
+      llevan a cabo para cumplir su misión.
+    </p>
+                         
+  </section>
+
+<!-- 👁️ VISION -->  
+  <section class=" paddtop_50 paddleft_75 paddbottom_15"  id="vision">   
+    <H1 class="paddbottom_20" >Visión</H1>
+    
+    <div class="col-sm-11 paddbottom_20">
+        <div>
+          <img style="width: 100%; cursor: pointer; border-radius: 20px;" 
+            onclick="" src="../img/mision.jpg"
+            alt="" 
+            class="d-block w-100" />
+        </div>       
+     </div>
+     
+    <p>  
+      Dios, según su palabra recogida en la Biblia, nos dice que todos 
+      los redimidos por su Hijo Jesucristo somos miembros de su Iglesia.
+      Reflejo de esta Iglesia única, universal, es la agrupación de 
+      cristianos en el ámbito de una Iglesia local, con el triple propósito 
+      básico de rendir culto de adoración a Dios, edificarse mutuamente 
+      con la común fe en su Señor y la extensión del Reino de Dios.     
+    </p>
+    <h4>Futuro ideal</h4>
+    <p>
+      Describe el estado futuro deseado de la iglesia. ¿Qué quieren lograr a 
+      largo plazo?      
+    </p> 
+    <h6>Ejemplo</h6>
+    <p>
+      Nuestra visión es ser una iglesia vibrante y multigeneracional, donde 
+      todos se sientan bienvenidos y puedan experimentar un crecimiento 
+      espiritual profundo."
+    </p>
+    <h4>Impacto comunitario</h4>     
+    <p>
+    Explica cómo la iglesia planea impactar positivamente a la comunidad 
+    más allá de sus muros.
+    </p>
+    <h6>Ejemplo</h6>
+    <p>
+    Queremos ser una luz en nuestra comunidad, ofreciendo ayuda a los 
+    necesitados y promoviendo la justicia social.
+    </p>
+                         
+  </section>
+  
+<!-- 📕 ASPECTOS LEGALES -->   
+  <section class="paddleft_75"  id="aslegales">
+
+    <h1 class="paddtop_50 paddbottom_20">Aspectos Legales</h1>
+    
+    <div class="col-sm-11 paddbottom_20">
+        <div>
+          <img style="width: 100%; cursor: pointer; border-radius: 20px;" 
+            onclick="" src="../img/aslegales.png"
+            alt="" 
+            class="d-block w-100" />
+        </div>
+    </div>
+    
+    <p>
+      Asegúrate de revisar los términos y condiciones de cada plataforma 
+      para entender sus requisitos y políticas.Recuerda que si eliges 
+      utilizar ivs con derechos de autor, necesitarás obtener los permisos 
+      adecuados o buscar contenido que se encuentren en el dominio público. 
+    </p>
+    <h4>Información legal</h4>
+    <p>
+      Incluye datos como el nombre legal de la iglesia, el número de registro, 
+      si aplica, y cualquier otra información relevante para la constitución 
+      legal de la organización. 
+    </p>
+    <h4>Declaración de fe</h4>
+    <p>
+      Presenta una declaración concisa de las creencias fundamentales de la
+      iglesia.
+    </p>
+    <h4>Política de privacidad</h4>
+    <p>
+      Detalla cómo se maneja la información personal de los miembros y 
+      visitantes del sitio web.
+    </p>
+    <h4>Términos de uso</h4> 
+    <p>
+      Establece las reglas para el uso del sitio web y los servicios que 
+      ofrece.    
+    </p
+
+  </section>
+</div>
+  
+<div>
+<!-- 📖 DEVOCIONALES -->
+
+  <section id="devocionales">
+    <h1 class="paddtop_50 paddbottom_20 paddleft_75">Devocionales</h1>
+    
+  <div class="paddleft_35 container">
     <div class="row">
       <div class="col-sm-4">
         <div
-          style="align-items: center; display: flex; justify-content: center; padding-top: 10px; padding-bottom: 20px; margin-top: 55px; ">
-          <button onclick="" type="button" class="btn btn-primary btn-rounded">
-            IVS IGLESIA VIDA EN SANTIDAD
+          style="align-items: center; display: flex; justify-content: center;  padding-bottom: 20px;">
+          <button 
+            onclick=""
+            type="button" class=" btn-rounded btn btn-info"
+          >
+            IVS : IGLESIA VIDA EN SANTIDAD
           </button>
         </div>
         <div>
-          <img style="width: 100%; cursor: pointer; border-radius: 20px;" onclick="" src="./img/conecta_meet.png" alt=""
+          <img style="width: 100%; cursor: pointer; border-radius: 20px;" onclick="" src="../img/conecta_meet.png" alt=""
             class="d-block w-100" />
         </div>
+
         <ul class="nav nav-pills flex-column">
           <li class="nav-item">
-            <a class="nav-link active" style="cursor: pointer; border-radius: 20px;"
+            <a class="nav-link active" style="cursor: pointer; border-radius: 20px; margin-top: 10px "
               href="https://meet.google.com/uty-jvtm-xdf">
               <b>Jorge Ojeda De Las Salas</b>
             </a>
           </li>
         </ul>
+        
         <hr class="d-sm-none" />
+        
       </div>
+
       <div class="col-sm-8">
         <div>
-          <img style="width:100%; cursor:pointer; border-radius:20px;" onclick="" src="./img/devocionalesenlinea.png"
+          <img style="width: 100%; cursor: pointer; border-radius: 20px;" onclick="" src="../img/devocionalesenlinea.png"
             alt="" class="d-block w-100" />
         </div>
         <div>
           <a className="nav-link" href="#piepagina">
-            <img style="width: 15%; cursor: pointer;" onclick="" src="./img/irapie.png" alt="" />
+            <img style="width: 15%; cursor: pointer;" onclick="" src="../img/irapie.png" alt="" />
           </a>
           <a className="nav-link" href="#encab">
-            <img style="width: 15%; cursor: pointer;" onclick="" src="./img/iraencab.png" alt="" />
+            <img style="width: 15%; cursor: pointer;" onclick="" src="../img/iraencab.png" alt="" />
           </a>
         </div>
       </div>
     </div>
-  </div>
+     <!-- DEVOCIONALES IVS -->
+  <p>
+      Busca proporcionar un espacio de paz y reflexión para aquellos 
+      que buscan alimentar su relación con Dios, sin importar su nivel 
+      de conocimiento o experiencia.
+  </p>
+    
+    <h4 class="txtalin_lf">Contenido regular</h5>    
+    <p>
+      Ofrece devocionales diarios o semanales que incluyan reflexiones 
+      bíblicas, oraciones y mensajes inspiradores.      
+    </p>
+    <h4 class="txtalin_lf">Categorías</h4>
+    <p>
+      Organiza los devocionales por temas (amor, fe, esperanza, etc.) o 
+      por ocasiones especiales (Navidad, Pascua).  
+    </p>    
+    <h4 class="txtalin_lf">Formato</h4>
+    <p>
+      Puedes utilizar texto, audio o video para presentar los devocionales. 
+    </p>
+    
+    
+  </div>   
+      
+  </section>
+ 
+  
+<!-- 🙏 INTERCESION -->   
+  <section class="paddleft_75"  id="intercesion">
+    <h1 class="paddtop_50 paddbottom_20">Intercesión</h1>
+    <div>
+      <img style="width: 100%; cursor: pointer; border-radius: 20px;" 
+        onclick="" src="../img/imgintercesion.png"
+        alt="" 
+        class="d-block w-100" />
+    </div>
+    <p>
+      Una brecha es una rotura o abertura. La brecha en la cual los 
+      intercesores deben de estar es la que se formó cuando la humanidad 
+      decidió apartarse de Dios y Dios de ellos por su pecado. 
+      El intercesor trata de llenar ese hueco con su clamor rogando 
+      misericordia y perdón por aquellos que viven alejados del Señor.      
+    </p>
+    <h4>Llamado a la oración</h4>
+    <p>
+      Invita a los miembros a unirse en oración por las necesidades de la 
+      iglesia, la comunidad y el mundo.   
+    </p>         
+    <h4>Peticiones de oración</h4>
+    <p>
+      Publica peticiones de oración específicas, ya sea de forma individual 
+      o colectiva.   
+    </p>   
+    <h4>Calendario de oración</h4>
+    <p>
+      Crea un calendario con fechas y temas para la oración.    
+    </p>
+  
+         
+  </section>
+  
+
+<!-- 🗓️ EVENTOS -->   
+  <section class="paddleft_75"  id="eventos">
+    <h1 class="paddtop_50 paddbottom_20">Eventos</h1>
+    <div>
+      <img style="width: 100%; cursor: pointer; border-radius: 20px;" 
+        onclick="" src="../img/imgeventos3.png"
+        alt="" 
+        class="d-block w-100" />
+    </div>
+    <p>
+      Objetivos a corto y largo plazo para mejorar la página web.
+      Estrategias para aumentar la participación y la interacción en línea.
+      Asignación de responsabilidades y cronograma de implementación.
+      El posicionamiento, la opinión pública y el valor percibido son cosas 
+      fabricadas.No son innatas ni casualidades de la vida. 
+      Y es una excelente noticia, porque puedes mejorar tu propio posicionamiento 
+      si decides elevar tus estándares de calidad.
+      Obviamente, este cambio de posicionamiento no ocurre de la noche a la mañana
+      por arte de magia.
+      Vas a tener que pensar, tomar decisiones, introducir cambios, ajustar. 
+    </p>
+    <h4>Calendario de eventos </h4>    
+    <p>
+      Muestra un calendario actualizado con todos los eventos de la iglesia, como servicios religiosos, actividades sociales, conferencias, etc.      
+    </p>
+    <h4>Detalles de los eventos  </h4>    
+    <p>
+      Incluye fechas, horarios, lugares, descripciones y formas de registrarse.      
+    </p>    
+    <h4>Galería de fotos y videos</h4>    
+    <p>
+      Comparte imágenes y videos de eventos pasados para crear un sentido de comunidad.      
+    </p>
+             
+  </section>
+
+
+<!-- 🏢 SEDES ASOCIADAS -->   
+  <section class="paddleft_75"  id="sedesasocia">
+    <h1 class="paddtop_50 paddbottom_20">Sedes Asociadas</h1>
+    <div>
+      <img style="width: 100%; cursor: pointer; border-radius: 20px;" 
+        onclick="" src="../img/sedesasociadas.png"
+        alt="" 
+        class="d-block w-100" />
+    </div>    
+    <p>
+     
+    </p>
+    <h4>Información de contacto</h4>
+    <p>
+      Si la iglesia tiene múltiples sedes o se asocia con otras iglesias,
+      proporciona la información de contacto de cada una.      
+    </p>
+    <h4>Horarios de servicios </h4>
+    <p>
+      Indica los horarios de los servicios en cada sede.
+    </p>
+    <h4>Mapas y direcciones</h4>
+    <p>
+      Incluye mapas interactivos para facilitar la ubicación de cada sede.
+    </p>
+    
+       
+  </section>
+   
+</div>
+ 
+ 
+  
+  <!-- Otras secciones -->
+  
+
+
+
   <!-- Footer-->
-  <footer class="text-center text-white" style="margin-top: 50px; background-color: #f1f1f1">
+  <footer class="text-center text-white" style="background-color: #f1f1f1">
+
     <!-- Grid container -->
     <div id="piepagina">
+
       <!-- Section: Social media -->
       <section id="about" class="bg-dark text-white">
         <div class="container">
           <div class="row" style="padding-top: 100px; padding-bottom: 80px">
             <div class="col-md-2">
+
               <h6><b>IVS</b></h6>
+
               <ul class="navbar-nav">
-                <!-- Section: Social media 
-                  <li onclick="openModal('idperfil')" class="nav-item">
-                 -->
+                <li>
                 <a class="nav-link"
-                  style=" cursor: pointer; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1;" "
-                  href="">
+                  style="text-align: left; cursor: pointer; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1;"
+                  href="#encab">
                   Inicio
                 </a>
+                <a class="nav-link"
+                  style="text-align: left; cursor: pointer; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1;"
+                  href="#mision">
+                  Misión
+                </a>
+                <a class="nav-link"
+                  style="text-align: left; cursor: pointer; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1;"
+                  href="#vision">
+                  Visión
+                </a>
+                <a class="nav-link"
+                  style="text-align: left; cursor: pointer; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1;"
+                  href="#aslegales">
+                  Aspectos Legales
+                </a>             
+                <a class="nav-link"
+                  style="text-align: left; cursor: pointer; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1;"
+                  href="#devocionales">
+                  Devocionales
+                </a>
+                <a class="nav-link"
+                  style="text-align: left; cursor: pointer; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1;"
+                  href="#intercesion">
+                  Intercesión
+                </a>                
+                <a class="nav-link"
+                  style="text-align: left; cursor: pointer; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1;"
+                  href="#eventos">
+                  Eventos
+                </a>                         
+                <a class="nav-link"
+                  style="text-align: left; cursor: pointer; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1;"
+                  href="#sedesasocia">
+                  Sedes Asociadas
+                </a>
+                             
                 </li>
               </ul>
+              
             </div>
-            <div class=" col-md-2">
-                  <h6><b>Devocionales</b></h6>
+
+
+            <div class="col-md-2">
+              <h6><b>Devocionales</b></h6>
             </div>
+            
+            
           </div>
         </div>
       </section>
+
     </div>
     <!-- Grid container -->
+
+
     <!-- Copyright -->
     <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2)">
       © 2024 Copyright:
-      <a class="text-dark" href="">IVS Iglesia Vida en Santidad</a>
+      <a class="text-dark" href="#">IVS Iglesia Vida en Santidad</a>
       . Reservados todos los derechos.
     </div>
     <!-- Copyright -->
+
   </footer>
 
-  <!-- Modules Firebase 
-    <script type="module" src="./index.js"></script>
-  -->
+
+  <!-- Modules Firebase -->
+  <script
+    type="module" 
+    src="../js/sidebar.js"
+    >
+  </script> 
+  
+</div>
+<!-- fin. ma in page -->
+ 
 </body>
-
-<!-- MODAL: Abrir y Cerrar -->
-<script>
-  // Función para abrir un modal específico
-  function openModal(modalId) {
-    var modal = document.getElementById(modalId);
-    modal.style.display = "block";
-  }
-  function closeModal(modalId) {
-    var modal = document.getElementById(modalId);
-    modal.style.display = "none";
-  }
-  // Cerrar el modal al hacer clic fuera de él
-  window.onclick = function (event) {
-    var modals = document.getElementsByClassName("w3-modal");
-    for (var i = 0; i < modals.length; i++) {
-      if (event.target == modals[i]) {
-        modals[i].style.display = "none";
-      }
-    }
-  };
-</script>
-
-<script>
-  function toggleNav() {
-    var sidebar = document.getElementById("mySidebar");
-    var idnavbar = document.getElementById("main");
-    var openBtn = document.getElementById("openBtn");
-    if (sidebar.style.width === "250px") {
-      // Si el sidebar está abierto, ciérralo
-      sidebar.style.width = "0";
-      idnavbar.style.marginLeft = "0";
-      idnavbar.style.marginLeft = "0";
-      openBtn.innerHTML = "☰ "; // Cambia el icono a hamburguesa
-    } else {
-      // Si el sidebar está cerrado, ábrelo
-      sidebar.style.marginTop = "90px";
-      sidebar.style.width = "250px";
-      idnavbar.style.marginLeft = "250px";
-      openBtn.innerHTML = "X "; // Cambia el icono a "X"
-    }
-  }
-</script>
-
 </html>
