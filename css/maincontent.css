@@ -34,7 +34,9 @@
       /* border: 1px solid; */
       text-align: justify;     
     }
-    
+    .paddleft_3{
+       padding-left: 3px;
+    }
     .paddleft_35{
       padding-left: 35px;
     }
@@ -43,6 +45,14 @@
       padding-left: 75px;
     }
 
+    .paddleft_78{
+      padding-left: 78px;
+    }
+
+    .paddleft_80{
+      padding-left: 78px;
+    }
+        
     .paddtop_50{
       padding-top: 50px;
     }

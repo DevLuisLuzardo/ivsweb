@@ -26,44 +26,125 @@
   const op8 = document.getElementById("opside8");
   const op9 = document.getElementById("opside9");
   
+  const img1 = document.getElementById("idinicio");
+  const img2 = document.getElementById("idmision");
+  const img3 = document.getElementById("idvision");
+  const img4 = document.getElementById("idaspectoslegal");
+  const img5 = document.getElementById("iddevocional");
+  const img6 = document.getElementById("idintercesion");
+  const img7 = document.getElementById("ideventos");
+  const img8 = document.getElementById("idsedesasocia");  
+  const img9 = document.getElementById("idfooter");
+  
+  
   const mainpage = document.getElementById("mainpage");  
   
-  btnside.style.background = "blue";
-  sidebar.style.width = "70px";
+  btnside.style.background = "black";
+  sidebar.style.width = "170px";
   
   //texto opciones
-  op1.innerHTML = ""; op2.innerHTML = ""; op3.innerHTML = ""; op4.innerHTML = "";
-  op5.innerHTML = ""; op6.innerHTML = ""; op7.innerHTML = ""; op8.innerHTML = "";
-  op9.innerHTML = "";
-              
-  //menu flotante : top              
+  limp();  
   
-    if (menuside) {
-    menuside.addEventListener("click", (e) => {
+  /*
+  sidebar.addEventListener("click", (e) => {
+    var x = document.getElementsByClassName("sidebar");
+    //alert(x); //objectHtmlcollection
+    //limp();
+    //op1.innerHTML = "Inicio";           
+  });       
+  */ 
+ 
+  
+  
+  var seg1, t;
+  
+  img1.addEventListener("click", (e) => {
+    limp();
+    op1.innerHTML = "Inicio"
+    op1.style = "font-size: 18px;"
+    op1.style = "color: white;"
+    var seg_=segtimedCount1();
+    //alert(seg_);
+    //timedCount1();
+  });  
+  img2.addEventListener("click", (e) => {
+    limp();
+    op2.innerHTML = "Misión";     
+    op2.style = "font-size: 18px;"
+    op2.style = "color: white;"     
+  });
+  img3.addEventListener("click", (e) => {
+    limp();
+    op3.innerHTML = "Visión";           
+    op3.style = "font-size: 18px;"
+    op3.style = "color: white;"  
+  });
+  img4.addEventListener("click", (e) => {
+    limp();
+    op4.innerHTML = "Legales";
+    op4.style = "font-size: 18px;"
+    op4.style = "color: white;"     
+  });     
+  img5.addEventListener("click", (e) => {
+    limp();
+    op5.innerHTML = "Devocional";         
+    op5.style = "font-size: 18px;"
+    op5.style = "color: white;"    
+  });     
+  img6.addEventListener("click", (e) => {
+    limp();
+    op6.innerHTML = "Intercesión";      
+    op6.style = "font-size: 18px;"
+    op6.style = "color: white;"         
+  });
+  img7.addEventListener("click", (e) => {
+    limp();
+    op7.innerHTML = "Eventos";      
+    op7.style = "font-size: 18px;"
+    op7.style = "color: white;"         
+  });
+  img8.addEventListener("click", (e) => {
+    limp();
+    op8.innerHTML = "Sedes";         
+    op8.style = "font-size: 18px;"
+    op8.style = "color: white;"      
+  });
+  img9.addEventListener("click", (e) => {
+    limp();
+    op9.innerHTML = "Pie de Pagina";    
+    op9.style = "font-size: 18px;"
+    op9.style = "color: white;"           
+  });          
+     
+  //menu flotante : top      
+  if (menuside) {
     
+    menuside.addEventListener("click", (e) => {     
+
       if (sidebar.style.width === "310px") {
         // Si el sidebar está abierto, ciérralo : #0000ff
-        sidebar.style.width = "70px";
+        sidebar.style.width = "75px";
         sidebar.style.height = "620px";
         
         //efectos para el boton hamb: cambiar a ☰
         btnside.innerHTML = "☰  "; // Cambia el icono a "☰ "
+        btnside.style = "margin-left:12px";
         
         //texto opciones
-        op1.innerHTML = ""; op2.innerHTML = ""; op3.innerHTML = ""; op4.innerHTML = "";
-        op5.innerHTML = ""; op6.innerHTML = ""; op7.innerHTML = ""; op8.innerHTML = "";
-        op9.innerHTML = "";               
-                         
+        limp();  
+        
         //desplegar pagina a la derecha...
         /* mainpage.style= "margin-left : 70px"; */       
         
       }
-      else {
+      else {      
         // Si el sidebar está cerrado, ábrelo
         sidebar.style.width = "310px";
         sidebar.style.height = "620px";
         //efectos para el boton hamb: cambiar a x
         btnside.innerHTML = "X "; // Cambia el icono a "X"
+        //Boton X cerrar, moverlo a la derecha
+        btnside.style = "margin-left:247px";        
         
         //texto opciones
         op1.innerHTML = "Inicio";
@@ -74,19 +155,75 @@
         op6.innerHTML = "Intercesión";
         op7.innerHTML = "Eventos";
         op8.innerHTML = "Sedes Asociadas";
-        op9.innerHTML = "Pied de Pagina";
+        op9.innerHTML = "Pie de Pagina";
         
         //quitar margen  a la ozquierda... 
         /* mainpage.style= "margin-left : 70px"; */
         
+        
+        op1.style = "color: white;"
+        op2.style = "color: white;"
+        op3.style = "color: white;"
+        op4.style = "color: white;"        
+        op5.style = "color: white;"
+        op6.style = "color: white;"
+        op7.style = "color: white;"
+        op8.style = "color: white;"
+        op9.style = "color: white;"
       }
              
     });
 }  
-    
-    
-    
-    
-    
-  
 
+//Limpiar variables de las opciones del sidebar    
+function limp(){
+  //texto opciones
+  op1.innerHTML = ""; op2.innerHTML = ""; op3.innerHTML = ""; op4.innerHTML = "";
+  op5.innerHTML = ""; op6.innerHTML = ""; op7.innerHTML = ""; op8.innerHTML = "";
+  op9.innerHTML = "";
+}
+ 
+    
+
+//timers
+function time_seg(){
+    var date = new Date();
+    const months = ["JAN", "FEB", "MAR","APR",   "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
+    var fech_ = date.getDate() + "-"  + months[date.getMonth()] + "-" +   date.getFullYear();      
+    return fech_;
+}
+  
+  function timedCount1() {
+   try{
+       var segds = segtimedCount1(); //segundos
+       //alert(segds);
+       if(segds==7){
+         seg1=0;
+         //alert(segds);
+       }
+   }
+   catch (error) {
+     console.log(" error : " + error.message);
+   }
+   //
+   t = setTimeout(timedCount1, 1000);
+  }
+  //f-
+  
+  //I1 '''''''''''''' INICIO tiempo transcurrido
+  function segtimedCount1() {
+   try {
+     var now = new Date(Date.now());   //Fecha Actual
+     seg1 = prefijo(now.getSeconds());  //segundos
+   } 
+   catch (error) {
+    console.log(" error : " + error.message);
+   }
+   return seg1;                       //retorno
+  }
+  //f-
+  
+  function prefijo(num) {return num < 10 ? ("0" + num) : num; }
+  
+  //f. timers
+  

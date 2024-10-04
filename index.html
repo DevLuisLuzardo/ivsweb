@@ -56,7 +56,7 @@
         class="navbar-nav"
       >
           <!-- Iniciar 
-          <img id="login" src="" alt=
+          <img id="login" src="" alt=""
             style="padding-left: 20px; padding-right: 20px; cursor: pointer" />
           <!-- Cerrar Sesion -- 
           <img id="loginout" src="" alt=""
@@ -67,16 +67,28 @@
     
   </nav>
 
+
+<ul>
+   
 <div 
   style="padding-top:9px; border-radius: 20px; margin-top:90px; " 
   id="mySidebar" 
-  class="sidebar"
+  class="sidebar mysid"
+  
 >
             
      <button id="idbtnside" 
-       class="openbtn rounded_15 mgleft_10"
+       class="openbtn rounded_15 mgleft_10 mgbottom_25 "
      >
        ☰ 
+        <span 
+          id="menu" 
+          class="visible" 
+        >
+        <!-- Menu Opciones -->
+        Acceder
+
+      </span>  
      </button>
    
     
@@ -101,9 +113,9 @@
     <a href="#mision" class="sidebar-link"
     >
         <img id = "idmision"
-        src = "../img/mision1.png" 
+        src = "../img/imgmision3.png" 
         alt = "mision" 
-        class = "paddleft_10 w_42"
+        class = "paddleft_10 w_45"
         style="width:30px"
       />
       <span style="margin-right:10px" id="opside2" class="visible">Misión</span>
@@ -180,8 +192,9 @@
       />
       <span style="margin-right:10px" id="opside9" class="visible">Pie de pagina</span>
     </a>
-            
+</ul>         
 </div>
+
 
 
   <!-- Contenedor Principal -->
@@ -195,7 +208,7 @@
   </div
   
   <!-- 🏠 INICIO --> 
-  <section class="paddtop_50 paddleft_75"  id="inicio">
+  <section class="paddtop_50 paddleft_78"  id="inicio">
    <H1>Diseña el Sitio Web de Tu Iglesia</H1>
      <!-- Contenido de la sección inicio -->
      <p>
@@ -218,7 +231,7 @@
 <div>
 <!-- 🚀 MISION -->
       
-  <section class=" paddtop_50 paddleft_75 paddbottom_15"  id="mision">   
+  <section class=" paddtop_50 paddleft_78 paddbottom_15"  id="mision">   
     <H1 class="paddbottom_20" >Misión</H1>
     
     <div class="col-sm-11 paddbottom_20">
@@ -276,7 +289,7 @@
   </section>
 
 <!-- 👁️ VISION -->  
-  <section class=" paddtop_50 paddleft_75 paddbottom_15"  id="vision">   
+  <section class=" paddtop_50 paddleft_78 paddbottom_15"  id="vision">   
     <H1 class="paddbottom_20" >Visión</H1>
     
     <div class="col-sm-11 paddbottom_20">
@@ -321,7 +334,7 @@
   </section>
   
 <!-- 📕 ASPECTOS LEGALES -->   
-  <section class="paddleft_75"  id="aslegales">
+  <section class="paddleft_78"  id="aslegales">
 
     <h1 class="paddtop_50 paddbottom_20">Aspectos Legales</h1>
     
@@ -368,7 +381,7 @@
 <div>
 <!-- 📖 DEVOCIONALES -->
 
-  <section id="devocionales">
+  <section class="paddleft_3" id="devocionales">
     <h1 class="paddtop_50 paddbottom_20 paddleft_75">Devocionales</h1>
     
   <div class="paddleft_35 container">
@@ -445,7 +458,7 @@
  
   
 <!-- 🙏 INTERCESION -->   
-  <section class="paddleft_75"  id="intercesion">
+  <section class="paddleft_78"  id="intercesion">
     <h1 class="paddtop_50 paddbottom_20">Intercesión</h1>
     <div>
       <img style="width: 100%; cursor: pointer; border-radius: 20px;" 
@@ -480,7 +493,7 @@
   
 
 <!-- 🗓️ EVENTOS -->   
-  <section class="paddleft_75"  id="eventos">
+  <section class="paddleft_78"  id="eventos">
     <h1 class="paddtop_50 paddbottom_20">Eventos</h1>
     <div>
       <img style="width: 100%; cursor: pointer; border-radius: 20px;" 
@@ -517,7 +530,7 @@
 
 
 <!-- 🏢 SEDES ASOCIADAS -->   
-  <section class="paddleft_75"  id="sedesasocia">
+  <section class="paddleft_78"  id="sedesasocia">
     <h1 class="paddtop_50 paddbottom_20">Sedes Asociadas</h1>
     <div>
       <img style="width: 100%; cursor: pointer; border-radius: 20px;" 
@@ -646,7 +659,8 @@
     type="module" 
     src="../js/sidebar.js"
     >
-  </script> 
+  </script>
+  
   
 </div>
 <!-- fin. ma in page -->
